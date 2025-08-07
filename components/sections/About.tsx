@@ -6,8 +6,8 @@ import { useRef } from "react"
 import { Code, Coffee, Lightbulb, Rocket } from 'lucide-react'
 
 const skills = [
-  "React.js", "Next.js", "TypeScript", "JavaScript", "Redux Toolkit", "Tailwind CSS", 
-  "Material UI", "D3.js", "Node.js", "Express.js", "PostgreSQL", "MongoDB", "PostGIS", 
+  "React.js", "Next.js", "TypeScript", "JavaScript", "Redux Toolkit", "Tailwind CSS",
+  "Material UI", "D3.js", "Node.js", "Express.js", "PostgreSQL", "MongoDB", "PostGIS",
   "OpenLayers", "GeoServer", "Docker", "Jest", "Cypress"
 ]
 
@@ -46,14 +46,14 @@ export default function About() {
           >
             <div className="bg-white/5 backdrop-blur-md rounded-2xl p-6 sm:p-8 border border-white/10">
               <p className="text-base sm:text-lg text-white/80 leading-relaxed mb-4 sm:mb-6">
-                I'm an experienced Front-End Developer with over 6 years of expertise 
-                building modern, scalable, and high-performance web applications. I specialize 
-                in React.js, Next.js, and creating responsive user interfaces that deliver 
+                I'm an experienced Front-End Developer with over 6 years of expertise
+                building modern, scalable, and high-performance web applications. I specialize
+                in React.js, Next.js, and creating responsive user interfaces that deliver
                 exceptional user experiences.
               </p>
               <p className="text-base sm:text-lg text-white/80 leading-relaxed">
-                Based in Dhaka, Bangladesh, I've led frontend development teams, optimized 
-                performance for large-scale platforms, and have strong knowledge in GIS-based 
+                Based in Dhaka, Bangladesh, I've led frontend development teams, optimized
+                performance for large-scale platforms, and have strong knowledge in GIS-based
                 applications and RESTful APIs.
               </p>
             </div>
@@ -83,6 +83,20 @@ export default function About() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="space-y-6 order-1 lg:order-2"
           >
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={isInView ? { opacity: 1, scale: 1 } : {}}
+              transition={{ duration: 0.8 }}
+              whileHover={{ scale: 1.05, rotate: 1 }}
+              className="w-40 h-40 sm:w-52 sm:h-52 rounded-full overflow-hidden border-4 border-emerald-400/50 mx-auto mb-6 shadow-lg shadow-emerald-400/10"
+            >
+              <img
+                src="/profile_image.jpeg"
+                alt="Md Magfur Alam"
+                className="w-full h-full object-cover"
+              />
+            </motion.div>
+
             <h3 className="text-xl sm:text-2xl font-bold text-white mb-4 sm:mb-6">Technologies I Love</h3>
             <div className="flex flex-wrap gap-2 sm:gap-3">
               {skills.map((skill, index) => (
