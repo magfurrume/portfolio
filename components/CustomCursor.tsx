@@ -76,7 +76,7 @@ const CustomCursor = () => {
       {/* Ripple Animation */}
       <div
         ref={rippleRef}
-        className="absolute top-0 left-0 w-8 h-8 border border-cyan-400 rounded-full opacity-40 pointer-events-none animate-ripple scale-100"
+        // className="absolute top-0 left-0 w-8 h-8 border border-cyan-400 rounded-full opacity-40 pointer-events-none animate-ripple scale-100"
       />
     </div>
   );

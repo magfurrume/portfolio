@@ -24,7 +24,7 @@ export interface ProjectDetail {
     coverage?: string
   }
   designType: 'default' | 'showcase' | 'minimal' | 'detailed'
-  customDesign?: string // New field for custom designs
+  customDesign?: string 
 }
 
 export const projects: ProjectDetail[] = [
@@ -168,7 +168,7 @@ export const projects: ProjectDetail[] = [
       "Data export capabilities"
     ],
     designType: "default",
-    customDesign: "sanitation-custom" // Now has a custom design
+    customDesign: "sanitation-custom" 
   },
   {
     id: 4,

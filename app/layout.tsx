@@ -17,7 +17,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Md Magfur Alam - Senior Software Engineer",
-  description: "Experienced Front-End Developer with over 6 years of expertise building modern, scalable, and high-performance web applications. Specialized in React.js, Next.js, and GIS applications.",
+    description: "I craft high-performance, scalable, and visually compelling web applications that drive real impact.With over 6 years of expertise in React.js, Next.js, Node.js, and GIS-driven solutions, I’ve delivered innovative products for government agencies, AI-powered startups, and global enterprises. I specialize in transforming complex challenges into intuitive, user-centric experiences, blending clean design, robust architecture, and measurable performance gains to create solutions that last.",
   keywords: ["Senior Software Engineer", "Frontend Developer", "React.js", "Next.js", "TypeScript", "GIS", "OpenLayers", "Bangladesh"],
   authors: [{ name: "Md Magfur Alam" }],
   creator: "Md Magfur Alam",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://magfuralam.dev",
     title: "Md Magfur Alam - Senior Software Engineer",
-    description: "Experienced Front-End Developer with over 6 years of expertise building modern, scalable, and high-performance web applications.",
+    description: "I craft high-performance, scalable, and visually compelling web applications that drive real impact.With over 6 years of expertise in React.js, Next.js, Node.js, and GIS-driven solutions, I’ve delivered innovative products for government agencies, AI-powered startups, and global enterprises. I specialize in transforming complex challenges into intuitive, user-centric experiences, blending clean design, robust architecture, and measurable performance gains to create solutions that last.",
     siteName: "Md Magfur Alam Portfolio",
     images: [
       {
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Md Magfur Alam - Senior Software Engineer",
-    description: "Experienced Front-End Developer with over 6 years of expertise building modern, scalable, and high-performance web applications.",
+    description: "I craft high-performance, scalable, and visually compelling web applications that drive real impact.With over 6 years of expertise in React.js, Next.js, Node.js, and GIS-driven solutions, I’ve delivered innovative products for government agencies, AI-powered startups, and global enterprises. I specialize in transforming complex challenges into intuitive, user-centric experiences, blending clean design, robust architecture, and measurable performance gains to create solutions that last.",
     creator: "@magfurrumel",
     images: ["/og-image.jpg"],
   },

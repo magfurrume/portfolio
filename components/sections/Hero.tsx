@@ -127,9 +127,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
           >
-            Experienced Front-End Developer with over 6 years of expertise building modern,
-            scalable, and high-performance web applications specialized in React.js and Next.js.
-          </motion.p>
+I build high-performance, scalable web applications that solve real problems. With 6+ years in React.js, Next.js, Node.js, and GIS solutions, I’ve delivered impactful products for governments, AI startups, and global enterprises.          </motion.p>
 
           <motion.div
             className="flex flex-wrap gap-3 sm:gap-4 justify-center items-center mt-6 sm:mt-8 px-4"

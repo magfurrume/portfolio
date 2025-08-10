@@ -6,9 +6,9 @@ import { useRef } from "react"
 import { Code, Coffee, Lightbulb, Rocket } from 'lucide-react'
 
 const skills = [
-  "React.js", "Next.js", "TypeScript", "JavaScript", "Redux Toolkit", "Tailwind CSS",
-  "Material UI", "D3.js", "Node.js", "Express.js", "PostgreSQL", "MongoDB", "PostGIS",
-  "OpenLayers", "GeoServer", "Docker", "Jest", "Cypress"
+  "React.js", "Next.js", "TypeScript", "JavaScript", "Redux Toolkit","Zustand", "Tailwind CSS",
+  "Material UI", "D3.js", "Node.js", "Express.js", "PostgreSQL", "MongoDB","Rest APIs","GraphQL", "PostGIS",
+  "OpenLayers", "GeoServer", "Docker", "Jest"
 ]
 
 const highlights = [
@@ -46,15 +46,15 @@ export default function About() {
           >
             <div className="bg-white/5 backdrop-blur-md rounded-2xl p-6 sm:p-8 border border-white/10">
               <p className="text-base sm:text-lg text-white/80 leading-relaxed mb-4 sm:mb-6">
-                I'm an experienced Front-End Developer with over 6 years of expertise
-                building modern, scalable, and high-performance web applications. I specialize
-                in React.js, Next.js, and creating responsive user interfaces that deliver
-                exceptional user experiences.
+               I’m a Senior Full Stack Engineer with over 6 years of experience delivering modern, scalable, 
+               and high-performance web applications. My expertise spans React.js, Next.js, Node.js,
+                and responsive UI design, with a strong focus on creating seamless, user-focused digital experiences.
               </p>
               <p className="text-base sm:text-lg text-white/80 leading-relaxed">
-                Based in Dhaka, Bangladesh, I've led frontend development teams, optimized
-                performance for large-scale platforms, and have strong knowledge in GIS-based
-                applications and RESTful APIs.
+               Based in Dhaka, Bangladesh, I’ve led frontend teams, developed solutions for national-level platforms,
+                and optimized performance for large-scale systems. I also bring deep knowledge of GIS-driven applications,
+                 RESTful APIs, GraphQL and data visualization, enabling me to craft solutions that are both technically robust and 
+                 visually engaging.
               </p>
             </div>
 
