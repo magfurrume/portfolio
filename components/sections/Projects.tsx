@@ -3,7 +3,7 @@
 import { useState, useRef } from "react"
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
-import { ExternalLink, Github, Filter, ArrowRight } from 'lucide-react'
+import { ExternalLink, Github, Filter, ArrowRight, Eye } from 'lucide-react'
 import Image from "next/image"
 import Link from "next/link"
 import MagneticButton from "@/components/MagneticButton"
@@ -90,7 +90,7 @@ export default function Projects() {
                       className="p-2.5 sm:p-3 bg-white/20 backdrop-blur-sm rounded-full hover:bg-white/30 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-transparent"
                       aria-label="View GitHub"
                     >
-                      <Github className="text-white w-4 h-4 sm:w-5 sm:h-5" />
+                      <Eye className="text-white w-4 h-4 sm:w-5 sm:h-5" />
                     </MagneticButton>
                     <MagneticButton
                       onClick={() => window.open(project.live, "_blank")}

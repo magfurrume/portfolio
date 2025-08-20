@@ -84,7 +84,7 @@ export default function Hero() {
       <ParticleBackground />
 
       <div className="absolute inset-0 bg-gradient-to-br from-slate-900/50 via-purple-900/30 to-slate-900/50" />
-      
+
 
       <div className="relative z-10 text-center w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
         <motion.div
@@ -127,7 +127,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
           >
-I build high-performance, scalable web applications that solve real problems. With 6+ years in React.js, Next.js, Node.js, and GIS solutions, I’ve delivered impactful products for governments, AI startups, and global enterprises.          </motion.p>
+            I craft high-performance, scalable web applications with React.js, Next.js, Node.js, and GIS solutions — delivering impactful products for governments, AI startups, and global enterprises.          </motion.p>
 
           <motion.div
             className="flex flex-wrap gap-3 sm:gap-4 justify-center items-center mt-6 sm:mt-8 px-4"

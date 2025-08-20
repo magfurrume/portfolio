@@ -34,11 +34,11 @@ export const projects: ProjectDetail[] = [
     title: "PixiAI - AI-Powered Image & Video Platform",
     description: "Developed an AI-based platform enabling users to generate images and videos from text prompts using advanced machine learning models.",
     longDescription: "PixiAI is a cutting-edge platform that harnesses the power of artificial intelligence to transform text descriptions into stunning visual content. Built with Next.js and TypeScript, it features real-time generation, advanced editing tools, and seamless user experience.",
-    image: "/pixiai_thumb.png",
+    image: "/projects/images/pixiai_thumb.png",
     images: [
       // "/pixiai_1.png",
-      "/project-management-kanban-board.png",
-      "/puresund_thumb.png"
+      "/projects/images/project-management-kanban-board.png",
+      "/projects/images/puresund_thumb.png"
     ],
     technologies: ["Next.js", "TypeScript", "Zustand", "PostgreSQL", "Spring Boot", "TensorFlow", "AWS"],
     category: "AI/ML",
@@ -83,11 +83,11 @@ export const projects: ProjectDetail[] = [
     title: "PureSounds - AI Music Platform",
     description: "Developed a music streaming platform powered by AI, enabling users to generate and listen to original music tracks through advanced ML models.",
     longDescription: "PureSounds revolutionizes music creation by combining AI-generated compositions with traditional streaming features. The platform allows users to create, customize, and share AI-generated music while enjoying a premium listening experience.",
-    image: "/puresund_thumb.png",
+    image: "/projects/images/puresund_thumb.png",
     images: [
-      "/puresund_thumb.png",
-      "/placeholder.svg?height=400&width=600&text=PureSounds+Player",
-      "/placeholder.svg?height=400&width=600&text=Music+Generator"
+      "/projects/images/puresund_thumb.png",
+      "/projects/images/placeholder.svg?height=400&width=600&text=PureSounds+Player",
+      "/projects/images/placeholder.svg?height=400&width=600&text=Music+Generator"
     ],
     technologies: ["Next.js", "TypeScript", "Zustand", "PostgreSQL", "Spring Boot", "Web Audio API"],
     category: "AI/ML",
@@ -132,11 +132,11 @@ export const projects: ProjectDetail[] = [
     title: "National Sanitation Dashboard",
     description: "Developed the National Sanitation Dashboard for tracking faecal sludge and solid waste management across 329+ municipalities in Bangladesh.",
     longDescription: "A comprehensive government dashboard system that provides real-time insights into sanitation management across Bangladesh. Built with React.js and integrated with GIS mapping for visual data representation.",
-    image: "/project-management-kanban-board.png",
+    image: "/projects/images/project-management-kanban-board.png",
     images: [
-      "/project-management-kanban-board.png",
-      "/placeholder.svg?height=400&width=600&text=GIS+Mapping",
-      "/placeholder.svg?height=400&width=600&text=Analytics+Dashboard"
+      "/projects/images/project-management-kanban-board.png",
+      "/projects/images/placeholder.svg?height=400&width=600&text=GIS+Mapping",
+      "/projects/images/placeholder.svg?height=400&width=600&text=Analytics+Dashboard"
     ],
     technologies: ["React.js", "D3.js", "OpenLayers", "Spring Boot", "PostgreSQL", "PostGIS"],
     category: "GIS",
@@ -176,9 +176,9 @@ export const projects: ProjectDetail[] = [
     title: "Planning Information System",
     description: "Integrated climate risk information into public investment planning for the Bangladesh Planning Commission.",
     longDescription: "A sophisticated planning system that helps government officials make informed decisions by integrating climate risk data with investment planning tools.",
-    image: "/plis.png",
+    image: "/projects/images/plis.png",
     images: [
-      "/plis.png"
+      "/projects/images/plis.png"
     ],
     technologies: ["React.js", "OpenLayers", "Node.js", "Express.js", "PostgreSQL", "PostGIS"],
     category: "GIS",

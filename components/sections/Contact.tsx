@@ -22,16 +22,33 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
-    
-    // Simulate form submission - replace with actual email service
-    setTimeout(() => {
+    setSubmitStatus("idle")
+
+    try {
+      const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({...formData, timeZone}),
+      })
+
+      if (res.ok) {
+        setSubmitStatus("success")
+        setFormData({ name: "", email: "", subject: "", message: "" })
+      } else {
+        setSubmitStatus("error")
+      }
+    } catch (error) {
+      console.error("Form submission error:", error)
+      setSubmitStatus("error")
+    } finally {
       setIsSubmitting(false)
-      setSubmitStatus("success")
-      setFormData({ name: "", email: "", subject: "", message: "" })
-      
       setTimeout(() => setSubmitStatus("idle"), 3000)
-    }, 2000)
+    }
   }
+
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData(prev => ({
@@ -72,9 +89,9 @@ export default function Contact() {
   ]
 
   const socialLinks = [
-    { icon: Github, href: "https://github.com/magfurrumel", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com/in/magfurrumel", label: "LinkedIn" },
-    { icon: Twitter, href: "https://twitter.com/magfurrumel", label: "Twitter" },
+    { icon: Github, href: "https://github.com/magfurrume", label: "GitHub" },
+    { icon: Linkedin, href: "https://linkedin.com/in/magfurrume", label: "LinkedIn" },
+    { icon: Twitter, href: "https://twitter.com/magfurrume", label: "Twitter" },
   ]
 
   return (
