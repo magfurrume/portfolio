@@ -16,8 +16,8 @@ export default function Projects() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
-  const filteredProjects = selectedCategory === "All" 
-    ? projects 
+  const filteredProjects = selectedCategory === "All"
+    ? projects
     : projects.filter(project => project.category === selectedCategory)
 
   return (
@@ -48,11 +48,10 @@ export default function Projects() {
               <motion.button
                 key={category}
                 onClick={() => setSelectedCategory(category)}
-                className={`px-4 sm:px-6 py-2 rounded-full font-medium transition-all duration-300 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-transparent ${
-                  selectedCategory === category
-                    ? "bg-gradient-to-r from-cyan-500 to-purple-600 text-white"
-                    : "bg-white/10 text-white/70 hover:bg-white/20 hover:text-white"
-                }`}
+                className={`px-4 sm:px-6 py-2 rounded-full font-medium transition-all duration-300 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-transparent ${selectedCategory === category
+                  ? "bg-gradient-to-r from-cyan-500 to-purple-600 text-white"
+                  : "bg-white/10 text-white/70 hover:bg-white/20 hover:text-white"
+                  }`}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -78,10 +77,13 @@ export default function Projects() {
                   alt={project.title}
                   width={600}
                   height={400}
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="w-full h-48 sm:h-56 object-cover transition-transform duration-500 group-hover:scale-110"
+                  priority={index < 3}
                 />
+
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                
+
                 {/* Hover Overlay */}
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
                   <div className="flex space-x-3 sm:space-x-4">
@@ -118,11 +120,11 @@ export default function Projects() {
                     {project.category}
                   </span>
                 </div>
-                
+
                 <p className="text-white/70 mb-4 line-clamp-3 text-sm sm:text-base">
                   {project.description}
                 </p>
-                
+
                 <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-4">
                   {project.technologies.slice(0, 4).map((tech) => (
                     <span
