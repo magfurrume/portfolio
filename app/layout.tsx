@@ -16,10 +16,11 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://magfur.site"),
   title: "Md Magfur Alam - Senior Software Engineer",
-    description: "I craft high-performance, scalable, and visually compelling web applications that drive real impact.With over 6 years of expertise in React.js, Next.js, Node.js, and GIS-driven solutions, I’ve delivered innovative products for government agencies, AI-powered startups, and global enterprises. I specialize in transforming complex challenges into intuitive, user-centric experiences, blending clean design, robust architecture, and measurable performance gains to create solutions that last.",
-  keywords: ["Senior Software Engineer","Full Stack Software Engineer", "Frontend Developer", "React.js", "Next.js", "TypeScript", "GIS", "OpenLayers", "Bangladesh"],
-    icons: {
+  description: "I craft high-performance, scalable, and visually compelling web applications that drive real impact.With over 6 years of expertise in React.js, Next.js, Node.js, and GIS-driven solutions, I’ve delivered innovative products for government agencies, AI-powered startups, and global enterprises. I specialize in transforming complex challenges into intuitive, user-centric experiences, blending clean design, robust architecture, and measurable performance gains to create solutions that last.",
+  keywords: ["Senior Software Engineer", "Full Stack Software Engineer", "Frontend Developer", "React.js", "Next.js", "TypeScript", "GIS", "OpenLayers", "Bangladesh"],
+  icons: {
     icon: [
       { url: "/fav/favicon.ico", sizes: "any" },       // default
       { url: "/fav/favicon-32x32.png", sizes: "32x32", type: "image/png" },
@@ -70,7 +71,7 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-    generator: 'v0.dev'
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -109,10 +110,10 @@ export default function RootLayout({
         />
       </head>
       <body className={`${spaceGrotesk.variable} ${inter.variable} font-sans antialiased`}>
-          <div className="cursor-none relative">
-            <CustomCursor />
-             {children}
-          </div>
+        <div className="cursor-none relative">
+          <CustomCursor />
+          {children}
+        </div>
       </body>
     </html>
   )

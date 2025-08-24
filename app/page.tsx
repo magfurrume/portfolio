@@ -1,13 +1,14 @@
 "use client"
 import { motion, useScroll, useSpring } from "framer-motion"
-import Hero from "@/components/sections/Hero"
-import About from "@/components/sections/About"
-import Skills from "@/components/sections/Skills"
-import Projects from "@/components/sections/Projects"
-import Experience from "@/components/sections/Experience"
 import Contact from "@/components/sections/Contact"
-import Navigation from "@/components/Navigation"
 import { ThemeProvider } from "@/components/ThemeProvider"
+import dynamic from "next/dynamic"
+const Projects = dynamic(() => import("@/components/sections/Projects"), { ssr: false })
+const Hero = dynamic(() => import('@/components/sections/Hero'), { ssr: false })
+const Experience = dynamic(() => import('@/components/sections/Experience'), { ssr: false })
+const Skills = dynamic(() => import('@/components/sections/Skills'), { ssr: false })
+const About = dynamic(() => import('@/components/sections/About'), { ssr: false })
+const Navigation = dynamic(() => import('@/components/Navigation'), { ssr: false })
 
 export default function Home() {
   const { scrollYProgress } = useScroll()
