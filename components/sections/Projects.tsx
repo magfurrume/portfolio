@@ -9,7 +9,7 @@ import Link from "next/link"
 import MagneticButton from "@/components/MagneticButton"
 import { projects } from "@/data/projects"
 
-const categories = ["All", "AI/ML", "GIS", "Frontend"]
+const categories = ["All", "AI/ML", "GIS"]
 
 export default function Projects() {
   const [selectedCategory, setSelectedCategory] = useState("All")
@@ -90,13 +90,16 @@ export default function Projects() {
                 {/* Hover Overlay */}
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
                   <div className="flex space-x-3 sm:space-x-4">
-                    <MagneticButton
-                      onClick={() => window.open(project.github, "_blank")}
-                      className="p-2.5 sm:p-3 bg-white/20 backdrop-blur-sm rounded-full hover:bg-white/30 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-transparent"
-                      aria-label="View GitHub"
-                    >
-                      <Eye className="text-white w-4 h-4 sm:w-5 sm:h-5" />
-                    </MagneticButton>
+                    {/* MODIFIED: Conditionally render GitHub link */}
+                    {project.github && (
+                      <MagneticButton
+                        onClick={() => window.open(project.github, "_blank")}
+                        className="p-2.5 sm:p-3 bg-white/20 backdrop-blur-sm rounded-full hover:bg-white/30 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-transparent"
+                        aria-label="View GitHub"
+                      >
+                        <Github className="text-white w-4 h-4 sm:w-5 sm:h-5" />
+                      </MagneticButton>
+                    )}
                     <MagneticButton
                       onClick={() => window.open(project.live, "_blank")}
                       className="p-2.5 sm:p-3 bg-white/20 backdrop-blur-sm rounded-full hover:bg-white/30 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-transparent"
@@ -104,6 +107,15 @@ export default function Projects() {
                     >
                       <ExternalLink className="text-white w-4 h-4 sm:w-5 sm:h-5" />
                     </MagneticButton>
+
+                    <Link href={`/projects/${project.slug}`}>
+                      <MagneticButton
+                        className="p-2.5 sm:p-3 bg-white/20 backdrop-blur-sm rounded-full hover:bg-white/30 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-transparent"
+                        aria-label="View Details"
+                      >
+                        <Eye className="text-white w-4 h-4 sm:w-5 sm:h-5" />
+                      </MagneticButton>
+                    </Link>
                   </div>
                 </div>
 
@@ -146,13 +158,7 @@ export default function Projects() {
 
                 <div className="flex items-center justify-between">
                   <span className="text-white/60 text-xs sm:text-sm">{project.year}</span>
-                  <Link
-                    href={`/projects/${project.slug}`}
-                    className="flex items-center space-x-1 text-emerald-400 hover:text-emerald-300 transition-colors group/link focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-transparent rounded-md px-2 py-1"
-                  >
-                    <span className="text-xs sm:text-sm font-medium">View Details</span>
-                    <ArrowRight size={14} className="sm:w-4 sm:h-4 group-hover/link:translate-x-1 transition-transform" />
-                  </Link>
+                 
                 </div>
               </div>
             </motion.article>

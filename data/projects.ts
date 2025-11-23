@@ -8,7 +8,7 @@ export interface ProjectDetail {
   images: string[]
   technologies: string[]
   category: string
-  github: string
+  github?: string
   live: string
   featured: boolean
   year: string
@@ -42,7 +42,6 @@ export const projects: ProjectDetail[] = [
     ],
     technologies: ["Next.js", "TypeScript", "Zustand", "PostgreSQL", "Spring Boot", "TensorFlow", "AWS"],
     category: "AI/ML",
-    github: "https://github.com/magfurrumel/pixiai-platform",
     live: "https://pixiai.net",
     featured: true,
     year: "2023",
@@ -91,7 +90,6 @@ export const projects: ProjectDetail[] = [
     ],
     technologies: ["Next.js", "TypeScript", "Zustand", "PostgreSQL", "Spring Boot", "Web Audio API"],
     category: "AI/ML",
-    github: "https://github.com/magfurrumel/puresounds-platform",
     live: "https://puresounds.cloud",
     featured: true,
     year: "2023",
@@ -140,7 +138,6 @@ export const projects: ProjectDetail[] = [
     ],
     technologies: ["React.js", "D3.js", "OpenLayers", "Spring Boot", "PostgreSQL", "PostGIS"],
     category: "GIS",
-    github: "https://github.com/magfurrumel/sanitation-dashboard",
     live: "http://sanboard.gov.bd",
     featured: true,
     year: "2022",
@@ -182,7 +179,6 @@ export const projects: ProjectDetail[] = [
     ],
     technologies: ["React.js", "OpenLayers", "Node.js", "Express.js", "PostgreSQL", "PostGIS"],
     category: "GIS",
-    github: "https://github.com/magfurrumel/planning-system",
     live: "http://plismap.plancomm.gov.bd",
     featured: true,
     year: "2021",

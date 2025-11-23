@@ -9,7 +9,7 @@
 
 **A cutting-edge, responsive portfolio website built with modern web technologies**
 
-[🌐 Live Demo](https://magfuralam.dev) • [📧 Contact](mailto:magfurrumel@gmail.com) • [💼 LinkedIn](https://linkedin.com/in/magfurrumel)
+[🌐 Live Demo](https://magfuralam.dev) • [📧 Contact](mailto:magfurrume@gmail.com) • [💼 LinkedIn](https://linkedin.com/in/magfurrume)
 
 </div>
 
@@ -77,7 +77,7 @@
 
 1. **Clone the repository**
    \`\`\`bash
-   git clone https://github.com/magfurrumel/portfolio-website.git
+   git clone https://github.com/magfurrume/portfolio-website.git
    cd portfolio-website
    \`\`\`
 
@@ -224,9 +224,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Md Magfur Alam** - Senior Software Engineer
 
-- 📧 Email: [magfurrumel@gmail.com](mailto:magfurrumel@gmail.com)
-- 💼 LinkedIn: [linkedin.com/in/magfurrumel](https://linkedin.com/in/magfurrumel)
-- 🐙 GitHub: [github.com/magfurrumel](https://github.com/magfurrumel)
+- 📧 Email: [magfurrume@gmail.com](mailto:magfurrume@gmail.com)
+- 💼 LinkedIn: [linkedin.com/in/magfurrume](https://linkedin.com/in/magfurrume)
+- 🐙 GitHub: [github.com/magfurrume](https://github.com/magfurrume)
 - 🌐 Website: [magfuralam.dev](https://magfuralam.dev)
 
 ---

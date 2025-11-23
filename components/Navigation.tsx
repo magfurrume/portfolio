@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { Menu, X } from "lucide-react"
 import { usePathname } from "next/navigation"
 import ThemeToggle from "@/components/ThemeToggle"
-import { useRouter } from "next/navigation" // <-- add this at the top
+import { useRouter } from "next/navigation" 
 
 
 const navItems = [
@@ -15,14 +15,14 @@ const navItems = [
   { name: "Projects", href: "#projects" },
   { name: "Experience", href: "#experience" },
   { name: "Contact", href: "#contact" },
-  { name: "Blog", href: "/blog" },
+  // { name: "Blog", href: "/blog" },
 ]
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
   const [activeSection, setActiveSection] = useState("hero")
   const pathname = usePathname()
-const router = useRouter() // <-- inside component
+const router = useRouter() 
 
   useEffect(() => {
     const handleScroll = () => {
@@ -57,7 +57,6 @@ const handleNavClick = async (href: string) => {
     if (pathname !== '/') {
       router.push('/' + href)
     } else {
-      // Wait a bit for mobile menu to close
       setTimeout(() => {
         const element = document.getElementById(href.substring(1))
         if (element) {
@@ -133,7 +132,7 @@ const handleNavClick = async (href: string) => {
 
           {/* Right Side (Theme + Hamburger) */}
           <div className="flex items-center gap-2 lg:gap-4">
-            <ThemeToggle />
+            {/* <ThemeToggle /> */}
             <motion.button
               className="block lg:hidden p-2 text-white rounded-md"
               onClick={() => setIsOpen(!isOpen)}

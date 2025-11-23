@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Md Magfur Alam - Senior Software Engineer",
     description: "I craft high-performance, scalable, and visually compelling web applications that drive real impact.With over 6 years of expertise in React.js, Next.js, Node.js, and GIS-driven solutions, I’ve delivered innovative products for government agencies, AI-powered startups, and global enterprises. I specialize in transforming complex challenges into intuitive, user-centric experiences, blending clean design, robust architecture, and measurable performance gains to create solutions that last.",
-    creator: "@magfurrumel",
+    creator: "@magfurrume",
     images: ["/og-image.jpg"],
   },
   robots: {
@@ -83,7 +83,6 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
 
       <head>
-        {/* ✅ JSON-LD structured data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

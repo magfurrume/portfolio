@@ -158,9 +158,9 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 1.2 }}
           >
             {[
-              { icon: Github, href: "https://github.com/magfurrumel", label: "GitHub" },
-              { icon: Linkedin, href: "https://linkedin.com/in/magfurrumel", label: "LinkedIn" },
-              { icon: Mail, href: "mailto:magfurrumel@gmail.com", label: "Email" },
+              { icon: Github, href: "https://github.com/magfurrume", label: "GitHub" },
+              { icon: Linkedin, href: "https://linkedin.com/in/magfurrume", label: "LinkedIn" },
+              { icon: Mail, href: "mailto:magfurrume@gmail.com", label: "Email" },
             ].map(({ icon: Icon, href, label }) => (
               <MagneticButton
                 key={label}

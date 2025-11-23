@@ -71,8 +71,8 @@ export default function Contact() {
     {
       icon: Mail,
       label: "Email",
-      value: "magfurrumel@gmail.com",
-      href: "mailto:magfurrumel@gmail.com"
+      value: "magfurrume@gmail.com",
+      href: "mailto:magfurrume@gmail.com"
     },
     {
       icon: Phone,
