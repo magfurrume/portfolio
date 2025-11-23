@@ -12,7 +12,7 @@ const experiences = [
     company: "Tiller",
     location: "Dhaka, Bangladesh",
     period: "Dec 2020 - Present",
-    duration: "3+ years",
+    duration: "4+ years",
     description: "Led frontend development for national dashboards enhancing urban sanitation and planning. Integrated GIS data with OpenLayers and PostGIS for dynamic map visualizations.",
     technologies: ["React.js", "Next.js", "TypeScript", "Redux Toolkit", "OpenLayers", "PostGIS"],
     achievements: [
@@ -24,7 +24,7 @@ const experiences = [
     metrics: {
       impact: "329+ Municipalities",
       performance: "40% Faster",
-      team: "5+ Engineers"
+      team: "10+ Engineers"
     }
   },
   {
